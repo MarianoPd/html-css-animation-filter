@@ -104,3 +104,161 @@
     from {transform: rotate(0deg)}
     to {transform: rotate(359deg)};
 }
+
+.ex-11-icon{    
+    font-size: 50px;   
+}
+
+.ex-11-icon:hover{
+    animation: ex-11 2s 1 linear;   
+}
+
+@keyframes ex-11 {
+    0% {transform: rotate(0deg)}
+    75% {transform: rotate(330deg)};
+}
+
+
+.ex-12-button{
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 50px;
+    padding: 20px 60px;
+    border:3px solid rgb(1, 1, 56);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.ex-12-button div{
+    display:inline-block;
+    height: 15px;
+    width: 50px;    
+    background-color: whitesmoke;
+    position: absolute;
+}
+
+.ex-12-top-white{
+    top: 0;
+    left: 10%;
+    transform: translate(0, -60%);    
+}
+
+.ex-12-button:hover div.ex-12-top-white{
+    animation: ex-12-top 2s 1 linear;
+}
+
+
+@keyframes ex-12-top{
+    0%{left: 10%;}
+    50%{left: calc(100% - 50px);}
+}
+
+
+.ex-12-bottom-white{
+    bottom: 0;
+    right: 10%;
+    transform: translate(0, 60%);
+}
+
+.ex-12-button:hover div.ex-12-bottom-white{
+    animation: ex-12-bottom 2s 1 linear;
+}
+
+
+@keyframes ex-12-bottom{
+    0%{right: 10%;}
+    50%{right: calc(100% - 50px);}
+}
+
+.ex-13-button{
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 50px;
+    padding: 20px 60px;
+    border:3px solid rgb(1, 1, 56);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.ex-13-button div{
+    display:inline-block;
+    height: 15px;
+    width: 50px;    
+    background-color: whitesmoke;
+    position: absolute;
+}
+
+.ex-13-top-white{
+    top: 0;
+    left: 25%;
+    transform: translate(-50%, -60%);    
+}
+
+.ex-13-button:hover div.ex-13-top-white{
+    animation: ex-13-top 2s 1 linear;
+}
+
+
+@keyframes ex-13-top{
+    0%{
+        left: 25%;
+        top: 0;
+    }
+    30%{
+        left: 100%;
+        top: 0;
+    }
+    50%{
+        left: 100%;
+        top: 100%;
+    }
+    80%{
+        left: 0;
+        top: 100%;
+    }
+    95%{
+        left: 0;
+        top: 0;
+    }
+    100%{
+        left: 25%;
+    }
+}
+
+
+.ex-13-bottom-white{
+    bottom: 0;
+    right: 25%;
+    transform: translate(50%, 60%);
+}
+
+.ex-13-button:hover div.ex-13-bottom-white{
+    animation: ex-13-bottom 2s 1 linear;
+}
+
+
+@keyframes ex-13-bottom{
+    0%{
+        right: 10%;
+        bottom: 0;
+    }
+    30%{
+        right: 100%;
+        bottom: 0;
+    }
+    50%{
+        right: 100%;
+        bottom: 100%;
+    }
+    80%{
+        right: 0;
+        bottom: 100%;
+    }
+    95%{
+        right: 0;
+        bottom: 0;
+    }
+    100%{
+        right: 10%;
+    }
+}
