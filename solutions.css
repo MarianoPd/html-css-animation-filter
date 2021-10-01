@@ -54,4 +54,53 @@
     transform: scale(120%);
 }
 
+.ex-6-img{
+    width: 400px; 
+}
 
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-7-img{
+    width: 400px; 
+    transition: 2s;
+}
+
+.ex-7-img:hover {
+    filter: sepia(70%) brightness(90%);
+}
+
+.ex-8-img{
+    width: 400px; 
+    transition: 2s;
+}
+
+.ex-8-img:hover {
+    filter: sepia(70%) brightness(90%);
+    border-radius: 20px;
+}
+
+.ex-9-img{
+    width: 500px; 
+    transition: 2s;
+    transform: scale(60%);
+}
+
+.ex-9-img:hover {
+    filter: sepia(70%) brightness(90%);
+    border-radius: 20px;
+    transform: scale(100%);
+}
+
+.ex-10-icon{
+    
+    font-size: 50px; 
+    animation: ex-10 1s infinite linear;  
+    animation-direction: reverse;  
+}
+
+@keyframes ex-10 {
+    from {transform: rotate(0deg)}
+    to {transform: rotate(359deg)};
+}
